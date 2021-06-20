@@ -40,7 +40,9 @@ import de.mogwai.common.i18n.ResourceHelper;
 import de.mogwai.common.i18n.ResourceHelperProvider;
 
 import javax.swing.*;
+import javax.swing.plaf.*;
 import java.awt.*;
+import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -741,15 +743,16 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
         theToolBar.add(theViewMenu);
         theToolBar.addSeparator();
 
-        theToolBar.add(theNewAction);
+        // Action Tooltip
+        theToolBar.add(theNewAction).setToolTipText("Create New Model");
         theToolBar.addSeparator();
-        theToolBar.add(theLoadAction);
-        theToolBar.add(theSaveAsAction);
+        theToolBar.add(theLoadAction).setToolTipText("Load Model");
+        theToolBar.add(theSaveAsAction).setToolTipText("Save Model");
         theToolBar.addSeparator();
         theToolBar.add(zoomBox);
         theToolBar.addSeparator();
-        theToolBar.add(zoomInAction);
-        theToolBar.add(zoomOutAction);
+        theToolBar.add(zoomInAction).setToolTipText("Zoom In");
+        theToolBar.add(zoomOutAction).setToolTipText("Zoom Out");
         theToolBar.addSeparator();
 
         handButton = new DefaultToggleButton(handAction);
@@ -785,6 +788,37 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
         updateRecentlyUsedMenuEntries();
 
         setupViewForNothing();
+
+        // Button, Box And Menu ToolTip
+        theFileMenu.setToolTipText("File");
+        theDBMenu.setToolTipText("Database Connection and SQL Generation");
+        theViewMenu.setToolTipText("Layout View Setting");
+
+        zoomBox.setToolTipText("Zoom Level Setting");
+        
+        handButton.setToolTipText("Select");
+        relationButton.setToolTipText("Relation");
+        entityButton.setToolTipText("Tables or Entity");
+        commentButton.setToolTipText("Comment");
+        viewButton.setToolTipText("Views");
+        intelligentLayoutCheckbox.setToolTipText("Animated Automatic Layout");
+
+        uiToolTip();
+    }
+
+    // Setting ui for ToolTip Globally;
+    private void uiToolTip() {
+        UIManager.put("ToolTip.font",
+            new FontUIResource("Verdana", Font.BOLD, 10));
+
+        UIManager.put("ToolTip.background",
+            new ColorUIResource(Color.WHITE));
+        
+        UIManager.put("ToolTip.foreground",
+            new ColorUIResource(Color.BLACK));
+
+        UIManager.put("ToolTip.border",
+            BorderFactory.createLineBorder(new Color(246, 222, 124)));
     }
 
     private void zoomOut() {
