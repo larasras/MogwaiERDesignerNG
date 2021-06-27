@@ -12,36 +12,38 @@
             <Text lang="de">Zuletzt benutzte Dateien</Text>
             <Text lang="en">Recently used files</Text>
         </Entry>
+        <!-- New Icon -->
         <Entry id="NEWMODEL">
             <Text lang="de">Neues Modell</Text>
             <Text lang="en">New model</Text>
-            <Icon>/de/erdesignerng/icons/new.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/new_model.png</Icon>
         </Entry>
         <Entry id="SAVEMODEL">
             <Text lang="de">Modell speichern</Text>
             <Text lang="en">Save model</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/save_model.png</Icon>
         </Entry>
         <Entry id="SAVEMODELAS">
             <Text lang="de">Modell speichern als...</Text>
             <Text lang="en">Save model as...</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/save_model.png</Icon>
         </Entry>
         <Entry id="SAVEMODELTODB">
             <Text lang="de">Modell in Repository speichern...</Text>
             <Text lang="en">Save model to repository...</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/save_model.png</Icon>
         </Entry>
         <Entry id="LOADMODELFROMDB">
             <Text lang="de">Modell aus Repository laden...</Text>
             <Text lang="en">Load model from repository...</Text>
-            <Icon>/de/erdesignerng/icons/folder.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/load_model.png</Icon>
         </Entry>
         <Entry id="LOADMODEL">
             <Text lang="de">Modell laden...</Text>
             <Text lang="en">Load model...</Text>
-            <Icon>/de/erdesignerng/icons/folder.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/load_model.png</Icon>
         </Entry>
+        <!--  -->
         <Entry id="EXITPROGRAM">
             <Text lang="de">Programm beenden</Text>
             <Text lang="en">Exit</Text>
@@ -116,18 +118,20 @@
             <Text lang="en">Zoom out</Text>
             <Icon>/de/erdesignerng/icons/magnifier_zoom_out.png</Icon>
         </Entry>
+        <!-- New Icon -->
         <Entry id="HAND">
-            <Icon>/de/erdesignerng/icons/hand.gif</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/select_entity.png</Icon>
         </Entry>
         <Entry id="ENTITY">
-            <Icon>/de/erdesignerng/icons/entity.gif</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/entity.png</Icon>
         </Entry>
         <Entry id="RELATION">
-            <Icon>/de/erdesignerng/icons/relation1.gif</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/relationship.png</Icon>
         </Entry>
         <Entry id="VIEWTOOL">
-            <Icon>/de/erdesignerng/icons/view.gif</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/views.png</Icon>
         </Entry>
+        <!-- -->
         <Entry id="ZOOM">
             <Text lang="de">Vergrößerung</Text>
             <Text lang="en">Zoom</Text>
@@ -539,9 +543,11 @@
             <Text lang="de">Domänen Editor...</Text>
             <Text lang="en">Domain editor...</Text>
         </Entry>
+        <!-- New Icon -->
         <Entry id="COMMENT">
-            <Icon>/de/erdesignerng/icons/comment_add.gif</Icon>
+            <Icon>/de/erdesignerng/icons/new_icons/comment.png</Icon>
         </Entry>
+        <!-- -->
         <Entry id="EXPORTINGTABLENEEDSPRIMARYKEY">
             <Text lang="de">Die exportierende Tabelle muss einen Primärschlüssel haben!</Text>
             <Text lang="en">The exporting table needs to have a primary key!</Text>
